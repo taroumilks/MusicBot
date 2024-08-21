@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width-device-width, initial-scale = 1.0">
+        <title> Poke's Website - Log In</title>
+        <link rel = "stylesheet" href = "log-inStyles.css">
+    </head>
+
+    <body>
+    <!-- Navigation Bar -->
+    <nav class = "navbar">
+        <div class="navbar__container">
+            <a href="../homepage-folder/homepage.html" id="navbar__logo"> TarouMilk </a>
+            <div class="navbar_toggle" id="mobile menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class = "navbar__item">
+                    <a href="../homepage-folder/homepage.html" class = "navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class = "navbar__item">
+                    <a href="../AboutUs-Folder/aboutus.html" class = "navbar__links">
+                        About Us
+                    </a>
+                </li>
+                <li class = "navbar__item">
+                    <a href="../AnalyzeSpotify-Folder/analyzeSpotify.html" class = "navbar__links">
+                        Analyze my Spotify!
+                    </a>
+                </li>
+                <li class = "navbar__item">
+                    <a href="../Login-Folder/log-in.html" class = "navbar__links">
+                        Log In
+                    </a>
+                </li>
+            </ul>
+        </div>
+     </nav>
+        <div class="loginBox">
+            <div class="loginBox__container">
+                <h3>
+                    Enter Your Login Credentials
+                </h3>
+
+                <form action="">
+                    <label for = "Username">
+                        User Name: <br>
+                    </label>
+                    <input text = "text"
+                            id = "username"
+                            name = "username"
+                            placeholder = "Enter Your Username" required>
+                    
+                    <label for="Password">
+                        <br><br>Password:<br>
+                    </label>
+
+                    <input text = "text"
+                            id = "password"
+                            type = "password"
+                            name = "password"
+                            placeholder = "Enter your Password" required>
+                    
+                    <div class="button__container">
+                        <button type = "submit" onclick = "login()" class = "button">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+                <div class="register">
+                    <div class="register__container">
+                        <h3> Don't have an account? </h3>
+                        <a href = "../Register-Folder/register.html">Register Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

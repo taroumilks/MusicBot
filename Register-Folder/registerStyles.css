@@ -1,9 +1,8 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: sans-serif;
+    background: #160c22;
 }
+
 /* Navigation Bar */
 .navbar{
     background: #160c22;
@@ -62,4 +61,36 @@
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
+}
+
+.registerBox{
+    color: #fff
+}
+
+.registerBox__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    border: solid;
+    height: 50vh;
+    width: 50vh;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+
+.button{
+    font-size: 13px;
+    color: #ffb7c5;
+}
+
+/* Register */
+.register{
+    color: #ffb7c5;
+}
+
+.register__container a{
+    color: #00FFFF;
 }

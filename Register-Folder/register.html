@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width-device-width, initial-scale = 1.0">
+        <title> Poke's Website - Log In</title>
+        <link rel = "stylesheet" href = "registerStyles.css">
+    </head>
+
+    <body>
+    <!-- Navigation Bar -->
+    <nav class = "navbar">
+        <div class="navbar__container">
+            <a href="../homepage-folder/homepage.html" id="navbar__logo"> TarouMilk </a>
+            <div class="navbar_toggle" id="mobile menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class = "navbar__item">
+                    <a href="../homepage-folder/homepage.html" class = "navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class = "navbar__item">
+                    <a href="../AboutUs-Folder/aboutus.html" class = "navbar__links">
+                        About Us
+                    </a>
+                </li>
+                <li class = "navbar__item">
+                    <a href="../AnalyzeSpotify-Folder/analyzeSpotify.html" class = "navbar__links">
+                        Analyze my Spotify!
+                    </a>
+                </li>
+                <li class = "navbar__item">
+                    <a href="../Login-Folder/log-in.html" class = "navbar__links">
+                        Log In
+                    </a>
+                </li>
+            </ul>
+        </div>
+     </nav>
+
+        <!-- Register Container -->
+         <div class="registerBox">
+            <div class="registerBox__container">
+                <h3>
+                    Register Here
+                </h3>
+
+                <form action="">
+                    <label for = "Username">
+                         UserName: <br>
+                    </label>
+                    <input type="text"
+                            placeholder = "Enter Username"
+                            name = "Username"
+                            id = "Username" 
+                            required>
+                    <label for = "Password">
+                        <br><br>Password:<br>
+                    </label>
+                    <input type = "Password"
+                            placeholder = "Enter Password"
+                            name = "Password"
+                            id = "Password"
+                            required>
+                     
+                    <label for = "Reenter Password">
+                        <br><br>Reenter Password<br>
+                    </label>
+                    <input type = "Password"
+                            placeholder = "Enter Password"
+                            name = "Password"
+                            id = "Password"
+                            required>
+                    <div class="button__container">
+                        <button type = "submit" onclick = register() class = "button">
+                            Sign Up</button>
+                    </div>
+                </form>
+
+                <div class="login">
+                    <div class="login__container">
+                        <h3>Already have an account?</h3>
+                        <a href="../Login-Folder/log-in.html">Login Here</a>
+                    </div>
+                </div>
+
+            </div>
+         </div>
