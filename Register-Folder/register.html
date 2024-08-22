@@ -5,6 +5,7 @@
         <meta name = "viewport" content = "width-device-width, initial-scale = 1.0">
         <title> Poke's Website - Log In</title>
         <link rel = "stylesheet" href = "registerStyles.css">
+        <script type = "module" src = "firebaseauth.js"></script>
     </head>
 
     <body>
@@ -50,33 +51,46 @@
                 </h3>
 
                 <form action="">
-                    <label for = "Username">
-                         UserName: <br>
+
+                    <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+                    <label for = "firstName">
+                        First Name: <br>
+                   </label>
+                   <input type="text"
+                           placeholder = "First Name"
+                           name = "Firstname"
+                           id = "FirstName" 
+                           required>
+
+                    <label for = "lastName">
+                        <br><br>Last Name: <br>
+                       </label>
+                       <input type="text"
+                               placeholder = "Last Name"
+                               name = "LastName"
+                               id = "LastName" 
+                               required>
+
+                    <label for = "Email">
+                        <br><br> Email: <br>
                     </label>
-                    <input type="text"
-                            placeholder = "Enter Username"
-                            name = "Username"
-                            id = "Username" 
+                    <input type="email"
+                            placeholder = "Enter Email"
+                            name = "Email"
+                            id = "Email" 
                             required>
                     <label for = "Password">
                         <br><br>Password:<br>
                     </label>
-                    <input type = "Password"
+                    <input type = "password"
                             placeholder = "Enter Password"
                             name = "Password"
                             id = "Password"
                             required>
                      
-                    <label for = "Reenter Password">
-                        <br><br>Reenter Password<br>
-                    </label>
-                    <input type = "Password"
-                            placeholder = "Enter Password"
-                            name = "Password"
-                            id = "Password"
-                            required>
+
                     <div class="button__container">
-                        <button type = "submit" onclick = register() class = "button">
+                        <button type = "submit" id = "signUp" class = "button">
                             Sign Up</button>
                     </div>
                 </form>
@@ -90,3 +104,7 @@
 
             </div>
          </div>
+
+
+         </body>
+     </html>
